@@ -1,0 +1,189 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.portfolio {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.portfolio h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.portfolio-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.05);
+}
+
+.project-info {
+    margin-top: 15px;
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Хедер */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 145px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list .checked {
+    color: #f39c12;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #f39c12;
+}
+
+/* Стилі для секції "Команда" */
+.team {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+    width: 20%;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+footer address {
+    margin-bottom: 15px;
+}
